@@ -28,6 +28,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var Button9: UIButton!
     @IBOutlet weak var Button0: UIButton!
     @IBOutlet weak var dotButton: UIButton!
+    @IBOutlet weak var inputLabel: UILabel!
+    @IBOutlet weak var calculationLabel: UILabel!
+    
     
     var buttonArr:[UIButton] = []
     
@@ -39,6 +42,16 @@ class ViewController: UIViewController {
         }
     }
 
-
+    @IBAction func tapNumber(_ sender: Any) {
+        guard let btn = sender as? UIButton else { return }
+        if let btnText = btn.titleLabel?.text {
+            inputLabel.text = (inputLabel.text ?? "") + btnText
+        }
+        btn.backgroundColor = .lightGray
+        UIView.animate(withDuration: 0.5){
+            btn.backgroundColor = .darkGray
+        }
+    }
+    
 }
 

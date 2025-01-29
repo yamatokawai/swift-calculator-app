@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trF-rM-ZYm">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trF-rM-ZYm">
                                 <rect key="frame" x="40" y="390" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -46,9 +45,8 @@
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7se-v9-sJs">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7se-v9-sJs">
                                 <rect key="frame" x="295" y="390" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -57,29 +55,32 @@
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="25"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ie-gH-c8p">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ie-gH-c8p">
                                 <rect key="frame" x="125" y="475" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="8">
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q8r-yP-8ZM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHD-QN-iE1">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHD-QN-iE1">
                                 <rect key="frame" x="210" y="475" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="9">
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KVE-Lh-OV1"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK6-AH-tS9">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK6-AH-tS9">
                                 <rect key="frame" x="295" y="475" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -87,25 +88,29 @@
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="25"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glq-U4-QbO">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glq-U4-QbO">
                                 <rect key="frame" x="40" y="475" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="7">
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="efE-pe-wqL"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5Z-mc-ZNk">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5Z-mc-ZNk">
                                 <rect key="frame" x="40" y="560" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="4">
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rOS-h9-Mu2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYT-Np-4wm">
                                 <rect key="frame" x="125" y="560" width="70" height="70"/>
@@ -116,6 +121,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="5">
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wc3-wj-RNh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toU-nt-Cci">
                                 <rect key="frame" x="210" y="560" width="70" height="70"/>
@@ -126,10 +134,12 @@
                                 <buttonConfiguration key="configuration" style="plain" title="6">
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PlV-d9-NVS"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlj-Sm-IA2">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlj-Sm-IA2">
                                 <rect key="frame" x="295" y="560" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -146,6 +156,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="2">
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fwf-AV-q4O"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQs-PD-XwA">
                                 <rect key="frame" x="210" y="645" width="70" height="70"/>
@@ -156,10 +169,12 @@
                                 <buttonConfiguration key="configuration" style="plain" title="1">
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vhs-Ns-yn2"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pb8-GB-VQl">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pb8-GB-VQl">
                                 <rect key="frame" x="295" y="645" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -167,25 +182,29 @@
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="25"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBh-QH-ph7">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBh-QH-ph7">
                                 <rect key="frame" x="40" y="645" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="3">
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O2T-Y2-eMr"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fe-nc-5Mz">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fe-nc-5Mz">
                                 <rect key="frame" x="40" y="730" width="158" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="0">
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QKx-H0-Q0B"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOo-O1-JnD">
                                 <rect key="frame" x="210" y="730" width="70" height="70"/>
@@ -196,10 +215,12 @@
                                 <buttonConfiguration key="configuration" style="plain" title=".">
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uox-LA-wo8"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mk-mi-zXr">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mk-mi-zXr">
                                 <rect key="frame" x="295" y="730" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -207,18 +228,19 @@
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="25"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44M-NS-xDr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44M-NS-xDr">
                                 <rect key="frame" x="40" y="320" width="325" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVs-UI-Isw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVs-UI-Isw">
                                 <rect key="frame" x="40" y="252" width="325" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="tpw-h7-oL6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -226,6 +248,36 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="leading" secondItem="G5Z-mc-ZNk" secondAttribute="leading" id="0R3-fc-1tM"/>
+                            <constraint firstItem="eVs-UI-Isw" firstAttribute="trailing" secondItem="44M-NS-xDr" secondAttribute="trailing" id="0eE-zN-r9c"/>
+                            <constraint firstItem="eVs-UI-Isw" firstAttribute="trailing" secondItem="nlj-Sm-IA2" secondAttribute="trailing" id="3Dy-Zz-rOT"/>
+                            <constraint firstItem="eVs-UI-Isw" firstAttribute="trailing" secondItem="7se-v9-sJs" secondAttribute="trailing" id="GbC-8k-spS"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="baseline" secondItem="5Ie-gH-c8p" secondAttribute="baseline" id="I9N-Z6-uyL"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="leading" secondItem="44M-NS-xDr" secondAttribute="leading" id="JRa-Z3-uva"/>
+                            <constraint firstItem="eVs-UI-Isw" firstAttribute="trailing" secondItem="yK6-AH-tS9" secondAttribute="trailing" id="Je5-es-wF0"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="leading" secondItem="RBh-QH-ph7" secondAttribute="leading" id="KNX-Oy-LaK"/>
+                            <constraint firstItem="44M-NS-xDr" firstAttribute="top" secondItem="eVs-UI-Isw" secondAttribute="bottom" constant="23" id="KtE-w4-YmS"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="baseline" secondItem="EHD-QN-iE1" secondAttribute="baseline" id="MEg-z2-GZd"/>
+                            <constraint firstAttribute="bottom" secondItem="glq-U4-QbO" secondAttribute="bottom" constant="307" id="R7W-HZ-uQm"/>
+                            <constraint firstItem="eVs-UI-Isw" firstAttribute="trailing" secondItem="4mk-mi-zXr" secondAttribute="trailing" id="Rj7-0g-e5c"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="top" secondItem="trF-rM-ZYm" secondAttribute="bottom" constant="15" id="Rwo-26-2tF"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="top" secondItem="yK6-AH-tS9" secondAttribute="top" id="VFH-KA-wib"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="bottom" secondItem="yK6-AH-tS9" secondAttribute="bottom" id="Vt2-BT-h35"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="leading" secondItem="6fe-nc-5Mz" secondAttribute="leading" id="Ylk-58-5ZY"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="leading" secondItem="trF-rM-ZYm" secondAttribute="leading" id="cdX-gC-dyT"/>
+                            <constraint firstItem="eVs-UI-Isw" firstAttribute="trailing" secondItem="pb8-GB-VQl" secondAttribute="trailing" id="e5M-QR-Hey"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="hxP-jR-1oF"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="trailing" secondItem="RBh-QH-ph7" secondAttribute="trailing" id="mZ1-Um-wVM"/>
+                            <constraint firstItem="eVs-UI-Isw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="193" id="mrh-RZ-kM2"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="leading" secondItem="eVs-UI-Isw" secondAttribute="leading" id="oHn-KG-NUl"/>
+                            <constraint firstItem="5Ie-gH-c8p" firstAttribute="leading" secondItem="glq-U4-QbO" secondAttribute="trailing" constant="15" id="sPr-MS-WRT"/>
+                            <constraint firstItem="G5Z-mc-ZNk" firstAttribute="top" secondItem="glq-U4-QbO" secondAttribute="bottom" constant="15" id="v60-d2-YCH"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="firstBaseline" secondItem="5Ie-gH-c8p" secondAttribute="baseline" id="w4X-Ou-ghO"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="trailing" secondItem="trF-rM-ZYm" secondAttribute="trailing" id="wMB-PD-fai"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eVs-UI-Isw" secondAttribute="trailing" constant="28" id="xdC-KE-784"/>
+                            <constraint firstItem="glq-U4-QbO" firstAttribute="trailing" secondItem="G5Z-mc-ZNk" secondAttribute="trailing" id="zTl-ZN-W0M"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="Button0" destination="6fe-nc-5Mz" id="4dz-Aq-7qm"/>
@@ -238,9 +290,11 @@
                         <outlet property="Button7" destination="glq-U4-QbO" id="rqZ-pg-LxK"/>
                         <outlet property="Button8" destination="5Ie-gH-c8p" id="KA9-BE-dYc"/>
                         <outlet property="Button9" destination="EHD-QN-iE1" id="BKP-Kx-frS"/>
+                        <outlet property="calculationLabel" destination="eVs-UI-Isw" id="cqy-sF-yZl"/>
                         <outlet property="clearButton" destination="trF-rM-ZYm" id="WDA-y7-7Zx"/>
                         <outlet property="divideButton" destination="7se-v9-sJs" id="tf8-Ib-QHo"/>
                         <outlet property="dotButton" destination="hOo-O1-JnD" id="Ajg-a6-0e9"/>
+                        <outlet property="inputLabel" destination="44M-NS-xDr" id="7el-8p-Goz"/>
                         <outlet property="minusButton" destination="nlj-Sm-IA2" id="7CM-A9-sPL"/>
                         <outlet property="percentButton" destination="rOe-kV-TFQ" id="zFJ-nJ-bfl"/>
                         <outlet property="plusButton" destination="pb8-GB-VQl" id="jpR-qU-kE6"/>
